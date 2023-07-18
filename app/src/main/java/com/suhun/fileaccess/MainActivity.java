@@ -20,10 +20,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void writeFun(View view){
-        String writeData = "Hello! My name is happy!!!";
+        String data = "Hello! My name is happy!!!";
         try{
             FileOutputStream fout = openFileOutput("mydata1.txt",MODE_PRIVATE);
-            fout.write(writeData.getBytes());
+            fout.write(data.getBytes());
             fout.flush();
             fout.close();
             Toast.makeText(this, "success", Toast.LENGTH_SHORT).show();
@@ -47,3 +47,5 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 }
+
+
